@@ -29,7 +29,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 
 
 # 일지
-|Date|Description|
-|:---:|---|
-|06_28|x-ray data|
-||https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia|
+|Date|Description|Official source|
+|:---:|---| --- |
+|06_28|x-ray data||
+|||https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia|
