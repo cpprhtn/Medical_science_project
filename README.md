@@ -37,10 +37,10 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 ||Only content to which I have full access|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=user|
 ||arrList is you're looking for What||
 #About SAGE Journals
-세계 상위권 임팩트 팩터를 보여줌
-또한 다양한 지원을 통해 질 높은 논문내용이 올라옴
-*Impact Factor & Ranking Results*
-**From the Journal Citation Reports (Web of Science Group, 2019)
+세계 상위권 임팩트 팩터를 보여줌<br>
+또한 다양한 지원을 통해 질 높은 논문내용이 올라옴<br>
+*Impact Factor & Ranking Results*<br>
+** From the Journal Citation Reports (Web of Science Group, 2019)
 
 With 627 journals now ranked in the JCR, SAGE continues to experience consistent growth within the reports, achieving a 22% increase over the past five years. In this year’s reports, 90 SAGE journals have received a top 10 category rank, with 6 journals receiving their first Impact Factor (IF). 192 titles are now placed in the top 30% of the JCR, and 53% of SAGE journals are ranked within the top half of their subject category. In the 2018 release, SAGE publishes the market leading journal within 16 categories (14 SSCI and 2 SCI) shown below.
 
