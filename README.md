@@ -51,3 +51,4 @@ In the 2018 release SAGE publishes the market-leading journal within 14 SSCI cat
 Over the last five years, SAGE has seen a 40% increase in the number of titles in the SCI index, primarily due to strategic acquisitions and organic growth across the medical, engineering and technology disciplines, with SAGE now being marked out as one of the top five publishers of medical journals in the world. SAGE continues to significantly grow its coverage within SCI with 254 journals now ranked and 38 journals in the top 25% of their SCI category.
 
 In the 2018 release SAGE publishes the market leading journal within 2 SCI categories: Materials Science, Characterization and Testing; and Orthopedics. By 5 year Impact Factor, SAGE publishes the market-leading journal in Materials Science, Characterization and Testing; and Orthopedics.
+출처 | https://uk.sagepub.com/en-gb/asi/impact-factor-ranking-results **
