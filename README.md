@@ -31,5 +31,24 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 # 일지
 |Date|Description|Official source|
 |:---:|---| --- |
-|06_28|x-ray data||
-|||https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia|
+|06_28|x-ray data|https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia|
+||SAGE Journals|https://journals.sagepub.com/|
+||Open access content only|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=18|
+||Only content to which I have full access|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=user|
+||arrList is you're looking for What||
+# SAGE Journals
+세계 상위권 임팩트 팩터를 보여줌
+또한 다양한 지원을 통해 질 높은 논문내용이 올라옴
+*Impact Factor & Ranking Results*
+**From the Journal Citation Reports (Web of Science Group, 2019)
+
+With 627 journals now ranked in the JCR, SAGE continues to experience consistent growth within the reports, achieving a 22% increase over the past five years. In this year’s reports, 90 SAGE journals have received a top 10 category rank, with 6 journals receiving their first Impact Factor (IF). 192 titles are now placed in the top 30% of the JCR, and 53% of SAGE journals are ranked within the top half of their subject category. In the 2018 release, SAGE publishes the market leading journal within 16 categories (14 SSCI and 2 SCI) shown below.
+
+A 17% increase in coverage in the SSCI over the last five years means that there are now 420 SAGE journals in the SSCI. 69% of the SSCI journals received an increased IF, of which 11 are newly acquired titles ranked in the 2018 release. 126 journals are now placed in the top 25% of the JCR rankings for their category.
+
+In the 2018 release SAGE publishes the market-leading journal within 14 SSCI categories: Criminology & Penology; Cultural Studies; Education & Educational Research; Education, Special; Family Studies; History; Psychology, Applied; Psychology, Multidisciplinary; Psychology, Psychoanalysis; Psychology, Social; Rehabilitation (SSCI); Social Sciences, Interdisciplinary; Social Work; and Women’s Studies.
+
+Over the last five years, SAGE has seen a 40% increase in the number of titles in the SCI index, primarily due to strategic acquisitions and organic growth across the medical, engineering and technology disciplines, with SAGE now being marked out as one of the top five publishers of medical journals in the world. SAGE continues to significantly grow its coverage within SCI with 254 journals now ranked and 38 journals in the top 25% of their SCI category.
+
+In the 2018 release SAGE publishes the market leading journal within 2 SCI categories: Materials Science, Characterization and Testing; and Orthopedics. By 5 year Impact Factor, SAGE publishes the market-leading journal in Materials Science, Characterization and Testing; and Orthopedics.
+출처 | https://uk.sagepub.com/en-gb/asi/impact-factor-ranking-results**
