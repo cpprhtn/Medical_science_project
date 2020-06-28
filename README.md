@@ -1,14 +1,14 @@
 # Medical_science_project
 
-## 소설 "퍼펙트 써전"을 읽고 얻은 아이디어를 바탕으로 프로젝트를 구체화하는 중이다
-*간략한 줄거리*
+## 소설 "퍼펙트 써전"을 읽고 아이디어를 얻음
+### *간략한 줄거리*
 장현준 의사의 아버지가 사고를 당했으나 제대로 치료를 받지 못 하고 죽게되었고,
 
 어머니는 희귀병으로 원인없이 아프게 되어,대학교 인턴을 하지 못하고 지인의 피부과 개인병원 시간제로 일한다.
 
 어느날 인공지능을 개발하는 친구 회사에 가서 우연한 기회로 인공지능 로니가 몸에 흡수된다.
 
-로니의 도움으로 단순한 써전이 아닌 여러 분야에서 두각을 보이는 장현준의 이야기이다.
+로니의 도움으로 훌륭한 의사가 되는 장현준의 이야기이다.
 
 
 ## 얻게 된 아이디어
@@ -33,10 +33,10 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |Date|Description|Official source|
 |:---:|---| --- |
 |06_28|x-ray data|https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia|
-||SAGE Journals|https://journals.sagepub.com/|
-||Open access content only|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=18|
-||Only content to which I have full access|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=user|
-||arrList is you're looking for What||
+|ㄴ|SAGE Journals|https://journals.sagepub.com/|
+|ㄴ|Open access content only|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=18|
+|ㄴ|Only content to which I have full access|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=user|
+|ㄴ|arrList is you're looking for What||
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
 또한 다양한 지원을 통해 질 높은 논문내용이 올라옴<br>
