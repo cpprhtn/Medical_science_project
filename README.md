@@ -36,7 +36,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 ||Open access content only|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=18|
 ||Only content to which I have full access|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=user|
 ||arrList is you're looking for What||
-# SAGE Journals
+#About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌
 또한 다양한 지원을 통해 질 높은 논문내용이 올라옴
 *Impact Factor & Ranking Results*
@@ -51,4 +51,3 @@ In the 2018 release SAGE publishes the market-leading journal within 14 SSCI cat
 Over the last five years, SAGE has seen a 40% increase in the number of titles in the SCI index, primarily due to strategic acquisitions and organic growth across the medical, engineering and technology disciplines, with SAGE now being marked out as one of the top five publishers of medical journals in the world. SAGE continues to significantly grow its coverage within SCI with 254 journals now ranked and 38 journals in the top 25% of their SCI category.
 
 In the 2018 release SAGE publishes the market leading journal within 2 SCI categories: Materials Science, Characterization and Testing; and Orthopedics. By 5 year Impact Factor, SAGE publishes the market-leading journal in Materials Science, Characterization and Testing; and Orthopedics.
-출처 | https://uk.sagepub.com/en-gb/asi/impact-factor-ranking-results**
