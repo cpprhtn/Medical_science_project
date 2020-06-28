@@ -18,7 +18,7 @@
 <del>장현준이 수술을 할 때면</del>
 <li>로니는 세계의 의학 학회저술지의 관련 수술법등을 검색하고, 환자에게 더 좋은 수술방법을 알려준다.
 
-# 생각중인 구상방안
+## 생각중인 구상방안
 x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 또한 세계 유명 저널등에 대해 검색하여 같이 알려주는 방식을 만들어 볼 예정이다.
 
@@ -28,4 +28,8 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 
 
 
-#
+# 일지
+|Date|Description|
+|:---:|---|
+|06_28|x-ray data|
+||https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia|
