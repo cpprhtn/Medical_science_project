@@ -15,6 +15,9 @@ Adam
 
 4가지의 매개변수 갱신을 통해 가장 점수 잘 나오는 것을 쓸 예정
 
+
+이후 논문 져지 크롤링후 자연어 처리
+seq2seq같은걸루..
 '''
 import numpy as np
 import os
@@ -24,6 +27,7 @@ from os.path import join
 def img_paths(image_dir):
     image_filenames = os.listdir(image_dir)
     return [join(image_dir, filename) for filename in image_filenames if not filename.endswith('.DS_Store')]
+
 
 
 #이미지 불러오기
