@@ -68,14 +68,13 @@ image_size = 224
 def read_and_prep_images(img_paths, img_height=image_size, img_width=image_size):
     imgs = [load_img(img_path, target_size=(img_height, img_width), grayscale=True) for img_path in img_paths]
     img_array = np.array([img_to_array(img) for img in imgs])
-    #return preprocess_input(img_array)
     return img_array
 
 def make_data(normal_paths, pneumonia_paths):
     normal = read_and_prep_images(normal_paths)
     pneumonia = read_and_prep_images(pneumonia_paths)
-    #print("normal's shape: ", normal.shape)
-    #print("pneumonia's shape: ", pneumonia.shape)
+    print("normal's shape: ", normal.shape)
+    print("pneumonia's shape: ", pneumonia.shape)
     X = np.concatenate((normal, pneumonia))
     y = np.concatenate((np.zeros([normal.shape[0]], dtype=int), np.ones([pneumonia.shape[0]], dtype=int)))
     return X, y
