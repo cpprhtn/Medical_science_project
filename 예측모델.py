@@ -73,19 +73,20 @@ def read_and_prep_images(img_paths, img_height=image_size, img_width=image_size)
 def make_data(normal_paths, pneumonia_paths):
     normal = read_and_prep_images(normal_paths)
     pneumonia = read_and_prep_images(pneumonia_paths)
-    print("normal's shape: ", normal.shape)
-    print("pneumonia's shape: ", pneumonia.shape)
+    #print("normal's shape: ", normal.shape)
+    #print("pneumonia's shape: ", pneumonia.shape)
     X = np.concatenate((normal, pneumonia))
     y = np.concatenate((np.zeros([normal.shape[0]], dtype=int), np.ones([pneumonia.shape[0]], dtype=int)))
     return X, y
 
 
 X_train, y_train = make_data(train_normal_paths, train_pneumonia_paths)
-print("X_train's shape: ", X_train.shape)
-print("y_train's shape: ", y_train.shape)
+print("X_train's shape: ", X_train.shape) #X_train's shape:  (5216, 224, 224, 1)
+print("y_train's shape: ", y_train.shape) #y_train's shape:  (5216,)
+
 X_test, y_test = make_data(test_normal_paths, test_pneumonia_paths)
-print("X_test's shape: ", X_test.shape)
-print("y_test's shape: ", y_test.shape)
+print("X_test's shape: ", X_test.shape) #X_test's shape:  (624, 224, 224, 1)
+print("y_test's shape: ", y_test.shape) #y_test's shape:  (624,)
 
 
 
