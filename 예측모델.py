@@ -33,7 +33,7 @@ Adam
 import numpy as np
 import os
 from os.path import join
-
+from keras.preprocessing.image import load_img, img_to_array
 
 def img_paths(image_dir):
     image_filenames = os.listdir(image_dir)
@@ -79,6 +79,13 @@ def make_data(normal_paths, pneumonia_paths):
     y = np.concatenate((np.zeros([normal.shape[0]], dtype=int), np.ones([pneumonia.shape[0]], dtype=int)))
     return X, y
 
+
+X_train, y_train = make_data(train_normal_paths, train_pneumonia_paths)
+print("X_train's shape: ", X_train.shape)
+print("y_train's shape: ", y_train.shape)
+X_test, y_test = make_data(test_normal_paths, test_pneumonia_paths)
+print("X_test's shape: ", X_test.shape)
+print("y_test's shape: ", y_test.shape)
 
 
 
