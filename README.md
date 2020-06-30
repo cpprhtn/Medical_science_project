@@ -30,7 +30,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 
 
 # 일지
-|Date|Description|Official source|
+|Date|Description|Official source(참고 주소)|
 |:---:|---| --- |
 |06_28|x-ray data|https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia|
 |ㄴ|SAGE Journals|https://journals.sagepub.com/|
@@ -38,7 +38,8 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |ㄴ|Only content to which I have full access|https://journals.sagepub.com/action/doSearch?AllField=arrList&access=user|
 |ㄴ|arrList is you're looking for What||
 |06_29|Start creating a prediction model||
-|ㄴ|Images Load|https://youtu.be/sDG5tPtsbSA|
+|ㄴ|Images Load||
+|06_30|Data preprocessing|https://youtu.be/sDG5tPtsbSA|
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
 또한 다양한 지원을 통해 질 높은 논문내용이 올라옴<br>
