@@ -90,4 +90,20 @@ print("y_test's shape: ", y_test.shape) #y_test's shape:  (624,)
 
 
 
+#Hyperparameter Definition
+learning_rate = 0.0001
+batch_size = 128
+epochs = 10
+dropout = 0.25
+seed = 1
+
+
+
+
+
+
+
+
+
+
 
