@@ -40,6 +40,8 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |06_29|Start creating a prediction model||
 |ㄴ|Images Load||
 |06_30|Data preprocessing|https://youtu.be/sDG5tPtsbSA|
+|07_01|Hyperparameter Definition||
+|ㄴ|Learning Conv2D & Maxpool|https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/|
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
 또한 다양한 지원을 통해 질 높은 논문내용이 올라옴<br>
