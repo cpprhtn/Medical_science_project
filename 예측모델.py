@@ -102,7 +102,7 @@ dropout = 0.25
 seed = 0
 
 
-#Conv2D + Maxpool + FC(전결합 레이어) + softmax 모델 사용예정
+#Conv2D + Maxpool + Conv2D + FC(전결합 레이어) + FC + softmax 모델 사용예정
 
 model = Sequential()
 
