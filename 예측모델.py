@@ -98,7 +98,7 @@ dropout = 0.25
 seed = 1
 
 
-#Conv2D + Maxpool 모델 사용예정
+#Conv2D + Maxpool + FC(전결합 레이어) + softmax 모델 사용예정
 
 
 
