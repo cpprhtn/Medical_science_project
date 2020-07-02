@@ -34,6 +34,10 @@ import numpy as np
 import os
 from os.path import join
 from keras.preprocessing.image import load_img, img_to_array
+from keras.models import Sequential
+from keras.layers import ZeroPadding2D, Conv2D, MaxPooling2D
+from keras.layers import Dropout, Dense, Flatten
+from keras.optimizers import SGD
 
 def img_paths(image_dir):
     image_filenames = os.listdir(image_dir)
@@ -95,15 +99,39 @@ learning_rate = 0.0001
 batch_size = 128
 epochs = 5
 dropout = 0.25
-seed = 1
+seed = 0
 
 
 #Conv2D + Maxpool + FC(전결합 레이어) + softmax 모델 사용예정
 
+model = Sequential()
+
+model.add(ZeroPadding2D((1, 1)))
+model.add(Conv2D(16, (4, 4), strides=(2, 2), activation='relu', input_shape=(image_size, image_size, 1)))
+model.add(MaxPooling2D((2, 2), strides=(2, 2)))
+model.add(Dropout(dropout, seed=seed))
+
+model.add(ZeroPadding2D((2, 2)))
+model.add(Conv2D(32, (8, 8), strides=(4, 4), activation='relu'))
+model.add(Dropout(dropout, seed=seed))
+
+model.add(Flatten())
+model.add(Dense(512, activation='relu'))
+model.add(Dropout(dropout, seed=seed))
+model.add(Dense(1, activation='softmax'))
+
+sgd = SGD(lr=learning_rate, decay=1e-6, momentum=0.9, nesterov=True)
+model.compile(loss='binary_crossentropy', optimizer=sgd)
+
+model.compile(optimizer='rmsprop',
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+
+model.fit(X_train, y_train, batch_size=batch_size, epochs=epochs)
+score = model.evaluate(X_test, y_test, batch_size=batch_size)
 
 
-
-
+print(score)
 
 
 
