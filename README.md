@@ -42,6 +42,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |06_30|Data preprocessing|https://youtu.be/sDG5tPtsbSA|
 |07_01|Hyperparameter Definition||
 |ㄴ|Learning Conv2D & Maxpool|https://tykimos.github.io/2017/01/27/CNN_Layer_Talk/|
+|07_02|Fully Connected Layers(FC)|https://missinglink.ai/guides/convolutional-neural-networks/fully-connected-layers-convolutional-neural-networks-complete-guide/|
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
 또한 다양한 지원을 통해 질 높은 논문내용이 올라옴<br>
