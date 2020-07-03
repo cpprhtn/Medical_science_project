@@ -8,12 +8,13 @@ Created on Mon Jun 29 17:56:18 2020
 
 
 '''
-SGD
-Momentum
-AdaGrad
-Adam
+#SGD
+#Momentum
+#AdaGrad
+#Adam
+#4가지의 매개변수 갱신을 통해 가장 점수 잘 나오는 것을 쓸 예정
 
-4가지의 매개변수 갱신을 통해 가장 점수 잘 나오는 것을 쓸 예정
+=>Conv2D 모델 사용
 
 
 논문 져지 페이지 크롤링 -> beautifulSuop4 사용??
