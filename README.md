@@ -47,7 +47,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |ㄴ|Conv2D + Maxpool + Conv2D + FC + FC + softmax||
 |07_03|Crawling SAGE Journals||
 |ㄴ|BeautifulSoup4|HTTPError: Forbidden|
-
+|ㄴ|requests|Success|
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
 또한 다양한 지원을 통해 질 높은 논문내용이 올라옴<br>
