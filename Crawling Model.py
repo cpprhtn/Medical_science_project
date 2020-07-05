@@ -11,6 +11,13 @@ Created on Fri Jul  3 22:10:42 2020
 
 X-ray 예측결과가 암일 경우
 
+requests로 html을 확인했으나 
+크롤링 해야하는 논문은
+특정 주소로 이어지기때문에
+사용불가 라는 결론이 나옴
+
+
+selenium을 사용해서 다시 만들어볼 예정
 '''
 import requests 
 urlF = "https://journals.sagepub.com/action/doSearch?AllField=" #front
