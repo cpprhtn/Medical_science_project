@@ -31,7 +31,7 @@ urlB = "&access=18"
 
 url = urlF + urlB
 
-rs = requests.post(url) 
+rs = requests.post("https://journals.sagepub.com/doi/full/10.1177/0002039720925826") 
 
 rs_code = rs.status_code 
 
