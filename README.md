@@ -52,8 +52,8 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |07_04|Crawling Model||
 |07_05|Get confirmation selenium||
 |07_06|Crawling Html||
-|ㄴ|Learning LNTK|https://datascienceschool.net/view-notebook/8895b16a141749a9bb381007d52721c1/|
-
+|ㄴ|Learning NLTK|https://datascienceschool.net/view-notebook/8895b16a141749a9bb381007d52721c1/|
+|07_07|Test NLTK||
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
 또한 다양한 지원을 통해 질 높은 논문내용이 올라옴<br>
