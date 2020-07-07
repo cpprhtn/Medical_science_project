@@ -21,7 +21,7 @@ requests를 사용해 html을 찾은 뒤
 
 불용어 처리 후 중요도 높은 단어 일부를 가져옴
 
-
+LNTK 사용
 '''
 
 urlF = "https://journals.sagepub.com/action/doSearch?AllField=" 
