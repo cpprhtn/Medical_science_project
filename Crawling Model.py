@@ -32,20 +32,42 @@ urlB = "&access=18"
 
 
 
-url = urlF + search + urlB
 
+def get_URL(keyword):
+    global url
+    urlF = "https://journals.sagepub.com/action/doSearch?AllField=" 
+    urlB = "&access=18"
+    url = urlF + keyword + urlB
+    return url
+    
 
 from selenium import webdriver
  
 #selenium의 webdriver로 크롬 브라우저를 실행한다
 driver = webdriver.Chrome("/Users/cpprhtn/Desktop/chromedriver")
  
+get_URL("Corona")
 #"SAGE Journals"에 접속한다
 driver.get(url)
  
 #페이지의 제목을 체크하여 'SAGE'에 제대로 접속했는지 확인한다
 assert "SAGE" in driver.title
- 
+
+
+
+import pyautogui 
+#전체 화면 크기
+pyautogui.size()
+
+#현재 마우스 위치 확인
+pyautogui.position
+
+#마우스 절대주소로 이동
+pyautogui.moveTo(220,572,1)
+
+#왼쪽 버튼 클릭
+pyautogui.click()
+
 #검색 입력 부분에 커서를 올리고
 #검색 입력 부분에 다양한 명령을 내리기 위해 elem 변수에 할당한다
 elem = driver.find_element_by_name("id")
