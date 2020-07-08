@@ -24,13 +24,11 @@ requests를 사용해 html을 찾은 뒤
 LNTK 사용
 '''
 
-urlF = "https://journals.sagepub.com/action/doSearch?AllField=" 
-
-search = "corona"
-
-urlB = "&access=18"
 
 
+from selenium import webdriver
+import pyautogui 
+import time
 
 
 def get_URL(keyword):
@@ -41,8 +39,7 @@ def get_URL(keyword):
     return url
     
 
-from selenium import webdriver
- 
+
 #selenium의 webdriver로 크롬 브라우저를 실행한다
 driver = webdriver.Chrome("/Users/cpprhtn/Desktop/chromedriver")
  
@@ -55,8 +52,7 @@ assert "SAGE" in driver.title
 
 
 
-import pyautogui 
-import time
+
 
 #전체 화면 크기
 pyautogui.size()
