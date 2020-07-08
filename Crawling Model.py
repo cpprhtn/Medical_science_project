@@ -41,9 +41,17 @@ def get_URL(keyword):
     return url
     
 
+from selenium.webdriver.chrome.options import Options
 
+options = Options()
+
+#chrome에서 F11을 눌러 전체 화면으로 넓히는 옵션입니다.
+time.sleep(3)
+options.add_argument('--kiosk')
 #selenium의 webdriver로 크롬 브라우저를 실행한다
 driver = webdriver.Chrome("/Users/cpprhtn/Desktop/chromedriver")
+#전체화면
+driver.maximize_window()
  
 get_URL("Corona")
 #"SAGE Journals"에 접속한다
