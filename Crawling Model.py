@@ -56,6 +56,8 @@ assert "SAGE" in driver.title
 
 
 import pyautogui 
+import time
+
 #전체 화면 크기
 pyautogui.size()
 
@@ -65,11 +67,19 @@ pyautogui.position
 #마우스 절대주소로 이동
 pyautogui.moveTo(600,572,3)
 
+
 #왼쪽 버튼 클릭
-pyautogui.click()
+pyautogui.mouseDown()
+time.sleep(1)
+pyautogui.mouseUp(button='left')
+#pyautogui.click(600,572,button='left',clicks=1,interval=5)
+#pyautogui.click(clicks=2, interval=2)
+#pyautogui.doubleClick()
+time.sleep(3)
 
-
-
+#현재 url 가져오기
+url = driver.current_url
+url
  
 #브라우저를 종료한다
 driver.close()
