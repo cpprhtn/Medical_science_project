@@ -63,7 +63,7 @@ pyautogui.size()
 pyautogui.position
 
 #마우스 절대주소로 이동
-pyautogui.moveTo(220,572,1)
+pyautogui.moveTo(600,572,3)
 
 #왼쪽 버튼 클릭
 pyautogui.click()
