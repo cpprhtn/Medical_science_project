@@ -29,6 +29,8 @@ LNTK 사용
 from selenium import webdriver
 import pyautogui 
 import time
+import requests 
+
 
 
 def get_URL(keyword):
@@ -77,5 +79,21 @@ time.sleep(3)
 url = driver.current_url
 url
  
+
+
+
+
+#requests 크롤링
+rs = requests.post(url) 
+
+rs_code = rs.status_code 
+
+if int(rs_code) == 200 :
+    print("Okay") 
+    rs_text = rs.text 
+    print(rs_text) 
+    
+rs.text
+    
 #브라우저를 종료한다
 driver.close()
