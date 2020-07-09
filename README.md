@@ -55,6 +55,8 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |ㄴ|Learning NLTK|https://datascienceschool.net/view-notebook/8895b16a141749a9bb381007d52721c1/|
 |07_07|Test NLTK||
 |07_08|selenium -> url -> crawling -> requests -> html||
+|ㄴ|Using pyautogui||
+|07_09|requests or BeautifulSoup4|requests = string type, BeautifulSoup4 = Html type|
 
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
