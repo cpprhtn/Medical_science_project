@@ -57,6 +57,10 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |07_08|selenium -> url -> crawling -> requests -> html||
 |ㄴ|Using pyautogui||
 |07_09|requests or BeautifulSoup4|requests = string type, BeautifulSoup4 = Html type|
+|ㄴ|selenium -> url -> crawling -> requests -> BeautifulSoup4 -> NLTK||
+|ㄴ|Learning seq2seq + attention|https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/|
+|ㄴ|Learning BERT|https://keep-steady.tistory.com/19|
+
 
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
