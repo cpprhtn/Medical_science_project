@@ -116,5 +116,28 @@ print(clip1_title)
 
 #테그값 제외
 print(clip1_title.text)
+clip = clip1_title.text
 #브라우저를 종료한다
 driver.close()
+
+
+
+#불용어 처리
+from nltk.corpus import stopwords 
+from nltk.tokenize import word_tokenize 
+import nltk
+nltk.download('punkt')
+import nltk
+nltk.download('stopwords')
+
+stop_words = set(stopwords.words('english')) 
+
+word_tokens = word_tokenize(clip)
+
+result = []
+for w in word_tokens: 
+    if w not in stop_words: 
+        result.append(w) 
+
+print(word_tokens) 
+print(result) 
