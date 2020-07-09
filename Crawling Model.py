@@ -39,20 +39,15 @@ def get_URL(keyword):
     urlB = "&access=18"
     url = urlF + keyword + urlB
     return url
-    
 
-from selenium.webdriver.chrome.options import Options
 
-options = Options()
-
-#chrome에서 F11을 눌러 전체 화면으로 넓히는 옵션입니다.
-time.sleep(3)
-options.add_argument('--kiosk')
 #selenium의 webdriver로 크롬 브라우저를 실행한다
-driver = webdriver.Chrome("/Users/cpprhtn/Desktop/chromedriver")
+driver = webdriver.Chrome("D:\chromedriver")
 #전체화면
 driver.maximize_window()
  
+
+#SAGE Journals에서 Corona에 대해 검색
 get_URL("Corona")
 #"SAGE Journals"에 접속한다
 driver.get(url)
@@ -101,7 +96,25 @@ if int(rs_code) == 200 :
     rs_text = rs.text 
     print(rs_text) 
     
-rs.text
+raw = rs.text
     
+
+
+from bs4 import BeautifulSoup
+
+#req = requests.get('https://journals.sagepub.com/doi/full/10.1177/0002039720925826')
+#raw = req.text
+
+html = BeautifulSoup(raw, 'html.parser')
+infos = html.select('div.hlFld-Abstract')
+
+print(infos[0])
+
+clip1 = infos[0]
+clip1_title = clip1.select_one('div.abstractSection')
+print(clip1_title)
+
+#테그값 제외
+print(clip1_title.text)
 #브라우저를 종료한다
 driver.close()
