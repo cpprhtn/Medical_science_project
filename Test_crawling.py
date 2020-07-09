@@ -6,12 +6,26 @@ Created on Fri Jul  3 20:56:41 2020
 @author: cpprhtn
 """
 
-#BeautifulSoup 실패
-from urllib.request import urlopen
+
+
+#BeautifulSoup 성공
 from bs4 import BeautifulSoup
 
-html = urlopen("https://journals.sagepub.com/action/doSearch?AllField=arrList&access=18")  
-#HTTPError: Forbidden
+req = requests.get('https://journals.sagepub.com/doi/full/10.1177/0002039720925826')
+raw = req.text
+
+html = BeautifulSoup(raw, 'html.parser')
+infos = html.select('div.hlFld-Abstract')
+
+print(infos[0])
+
+clip1 = infos[0]
+clip1_title = clip1.select_one('div.abstractSection')
+print(clip1_title)
+
+#테그값 제외
+print(clip1_title.text)
+
 
 
 bsObject = BeautifulSoup(html, "html.parser") 
