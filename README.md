@@ -60,6 +60,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |ㄴ|selenium -> url -> crawling -> requests -> BeautifulSoup4 -> NLTK||
 |ㄴ|Learning seq2seq + attention|https://lovit.github.io/machine%20learning/2019/03/17/attention_in_nlp/|
 |ㄴ|Learning BERT|https://keep-steady.tistory.com/19|
+|07_10|Stopword processing|Secure versatility|
 
 
 # About SAGE Journals
