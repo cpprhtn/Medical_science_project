@@ -22,6 +22,8 @@ requests를 사용해 html을 찾은 뒤
 LNTK 사용
 
 불용어 처리 후 중요도 높은 단어 일부를 가져옴
+
+타 검색결과에서도 적용됨 -> 범용성 인
 '''
 
 
@@ -48,7 +50,7 @@ driver.maximize_window()
  
 
 #SAGE Journals에서 Corona에 대해 검색
-get_URL("Corona")
+get_URL("flu")
 #"SAGE Journals"에 접속한다
 driver.get(url)
  
@@ -66,7 +68,7 @@ pyautogui.size()
 pyautogui.position
 
 #마우스 절대주소로 이동
-pyautogui.moveTo(600,572,3)
+pyautogui.moveTo(500,692,3)
 
 
 #왼쪽 버튼 클릭
