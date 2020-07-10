@@ -63,6 +63,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |07_10|Stopword processing|Secure versatility|
 |ㄴ||https://wikidocs.net/45101|
 |ㄴ|Text preprocessing|Clear|
+|ㄴ|Vanilla Rnn|Embedding Vector = 10, hidden size = 32|
 
 
 # About SAGE Journals
