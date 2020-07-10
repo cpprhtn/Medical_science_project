@@ -41,3 +41,8 @@ print('학습에 사용할 샘플의 개수: %d' % len(sequences))
 
 #샘플 확인
 print(sequences)
+
+
+#가장 긴 길이로 샘플 길이 맞춰주기
+max_len=max(len(l) for l in sequences) # 모든 샘플에서 길이가 가장 긴 샘플의 길이 출력
+print('샘플의 최대 길이 : {}'.format(max_len))
