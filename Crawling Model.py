@@ -50,7 +50,7 @@ driver.maximize_window()
  
 
 #SAGE Journals에서 Corona에 대해 검색
-get_URL("flu")
+get_URL("Corona")
 #"SAGE Journals"에 접속한다
 driver.get(url)
  
@@ -68,7 +68,7 @@ pyautogui.size()
 pyautogui.position
 
 #마우스 절대주소로 이동
-pyautogui.moveTo(500,692,3)
+pyautogui.moveTo(570,582,2)
 
 
 #왼쪽 버튼 클릭
