@@ -107,6 +107,7 @@ from bs4 import BeautifulSoup
 #req = requests.get('https://journals.sagepub.com/doi/full/10.1177/0002039720925826')
 #raw = req.text
 
+#Abstract
 html = BeautifulSoup(raw, 'html.parser')
 infos = html.select('div.hlFld-Abstract')
 
