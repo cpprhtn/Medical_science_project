@@ -64,7 +64,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |ㄴ||https://wikidocs.net/45101|
 |ㄴ|Text preprocessing|Clear|
 |ㄴ|Vanilla Rnn|Embedding Vector = 10, hidden size = 32|
-|07_11|LSTM Text Classification|https://medium.com/analytics-vidhya/neural-network-lstm-example-of-text-classification-398e01cab054|
+|07_11|Learning LSTM Text Classification|https://medium.com/analytics-vidhya/neural-network-lstm-example-of-text-classification-398e01cab054|
 |ㄴ|LSTM|Embedding Vector = 10, hidden size = 128|
 
 
