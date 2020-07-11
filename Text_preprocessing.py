@@ -65,6 +65,7 @@ print(y)
 
 #레이블 분리완료
 
+
 #RNN 모델에 훈련 데이터를 훈련 시키기 전에 레이블에 대해서 원-핫 인코딩을 수행
 y = to_categorical(y, num_classes=vocab_size)
 
