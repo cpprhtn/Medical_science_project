@@ -44,7 +44,7 @@ def get_URL(keyword):
 
 
 #selenium의 webdriver로 크롬 브라우저를 실행한다
-driver = webdriver.Chrome("/Users/cpprhtn/Desktop/chromedriver")
+driver = webdriver.Chrome("D:\chromedriver")
 #전체화면
 driver.maximize_window()
  

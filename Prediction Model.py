@@ -47,22 +47,22 @@ def img_paths(image_dir):
 
 
 #Images Load
-train_normal_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/train/NORMAL'
-test_normal_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/test/NORMAL'
+train_normal_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/train/NORMAL'
+test_normal_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/test/NORMAL'
 
 train_normal_paths = img_paths(train_normal_dir)
 test_normal_paths = img_paths(test_normal_dir)
 
-train_pneumonia_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/train/PNEUMONIA'
-test_pneumonia_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/test/PNEUMONIA'
+train_pneumonia_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/train/PNEUMONIA'
+test_pneumonia_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/test/PNEUMONIA'
 
 train_pneumonia_paths = img_paths(train_pneumonia_dir)
 test_pneumonia_paths = img_paths(test_pneumonia_dir)
 
-val_normal_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/val/NORMAL'
+val_normal_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/val/NORMAL'
 val_normal_paths = img_paths(val_normal_dir)
 
-val_pneumonia_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/val/PNEUMONIA'
+val_pneumonia_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/val/PNEUMONIA'
 val_pneumonia_paths = img_paths(val_pneumonia_dir)
 
 
