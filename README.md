@@ -15,9 +15,9 @@
 인공지능 로니가 의사 장현준에게 어떠한 영항을 끼쳤는지를 위주로 소설을 다시 한번 읽어보았다.<br>
 
 <li><del>장현준의 시각(로니가 장현준의 신체를 분석하여 시각[전반적인 신체능력]을 강화시켜줌)을 통해 환자의 x-ray를 보고,</del><br>
-빅데이터를 통해 분류해둔 데이터를 기반으로 "A질병일 확률이 97%, 하지만 여기가 불확실 하기 때문에 B일 가능성이 3%가 남아있다." 식의 결론을 내려준다.</li>
+빅데이터를 통해 분류해둔 데이터를 기반으로 "A질병일 확률이 97%, B일 확률이 3% 남아있다." 식의 결론을 내려준다.</li>
 
-<li><del>장현준이 수술을 할 때면</del><br>로니는 세계의 의학 학회저술지의 관련 수술법등을 검색하고, 환자에게 더 좋은 수술방법을 알려준다.
+<li><del>장현준이 수술을 할 때면</del><br>로니는 세계의 의학 학회저술지의 최신 수술법등을 검색하고, 환자에게 더 좋은 방향의 수술방법을 알려준다.
 
 ## 생각중인 구상방안
 x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
@@ -62,6 +62,11 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |ㄴ|Learning BERT|https://keep-steady.tistory.com/19|
 |07_10|Stopword processing|Secure versatility|
 |ㄴ||https://wikidocs.net/45101|
+|ㄴ|Text preprocessing|Clear|
+|ㄴ|Vanilla Rnn|Embedding Vector = 10, hidden size = 32|
+|07_11|Learning LSTM Text Classification|https://medium.com/analytics-vidhya/neural-network-lstm-example-of-text-classification-398e01cab054|
+|ㄴ|LSTM|Embedding Vector = 10, hidden size = 128|
+|07_12|Modify the LSTM code||
 
 
 # About SAGE Journals

@@ -28,6 +28,7 @@ print(t.word_index)
 
 
 print(type(text))
+#문자열로 변환
 String = ' '.join(text)
 #train data
 sequences = list()
@@ -46,3 +47,26 @@ print(sequences)
 #가장 긴 길이로 샘플 길이 맞춰주기
 max_len=max(len(l) for l in sequences) # 모든 샘플에서 길이가 가장 긴 샘플의 길이 출력
 print('샘플의 최대 길이 : {}'.format(max_len))
+sequences = pad_sequences(sequences, maxlen=max_len, padding='pre')
+print(sequences)
+
+
+sequences = np.array(sequences)
+X = sequences[:,:-1]
+y = sequences[:,-1]
+# 리스트의 마지막 값을 제외하고 저장한 것은 X
+# 리스트의 마지막 값만 저장한 것은 y. 이는 레이블에 해당
+
+#분리된 X값
+print(X)
+
+#분리된 y값
+print(y)
+
+#레이블 분리완료
+
+
+#RNN 모델에 훈련 데이터를 훈련 시키기 전에 레이블에 대해서 원-핫 인코딩을 수행
+y = to_categorical(y, num_classes=vocab_size)
+
+print(y)

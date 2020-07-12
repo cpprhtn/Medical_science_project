@@ -50,7 +50,7 @@ driver.maximize_window()
  
 
 #SAGE Journals에서 Corona에 대해 검색
-get_URL("flu")
+get_URL("Corona")
 #"SAGE Journals"에 접속한다
 driver.get(url)
  
@@ -68,7 +68,7 @@ pyautogui.size()
 pyautogui.position
 
 #마우스 절대주소로 이동
-pyautogui.moveTo(500,692,3)
+pyautogui.moveTo(570,582,2)
 
 
 #왼쪽 버튼 클릭
@@ -107,19 +107,37 @@ from bs4 import BeautifulSoup
 #req = requests.get('https://journals.sagepub.com/doi/full/10.1177/0002039720925826')
 #raw = req.text
 
+
+#html.select('div.hlFld-Fulltext')
+
+
+#Abstract
 html = BeautifulSoup(raw, 'html.parser')
 infos = html.select('div.hlFld-Abstract')
+#intro = html.select('div.hlFld-Fulltext')
 
 print(infos[0])
+#print(intro[0])
 
 clip1 = infos[0]
+#clip2 = intro[0]
 clip1_title = clip1.select_one('div.abstractSection')
+#clip2_title = clip2.select_one('class.sectionHeading')
 print(clip1_title)
-
+#print(clip2_title)
 #테그값 제외
 print(clip1_title.text)
 clip = clip1_title.text
+clip
 #브라우저를 종료한다
+
+
+
+
+
+
+
+
 driver.close()
 
 
