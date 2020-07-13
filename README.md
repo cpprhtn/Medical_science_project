@@ -67,6 +67,8 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |07_11|Learning LSTM Text Classification|https://medium.com/analytics-vidhya/neural-network-lstm-example-of-text-classification-398e01cab054|
 |ㄴ|LSTM|Embedding Vector = 10, hidden size = 128|
 |07_12|Modify the LSTM code||
+|07_13|Learning seq2seq|https://tykimos.github.io/2018/09/14/ten-minute_introduction_to_sequence-to-sequence_learning_in_Keras/|
+|ㄴ|Learning Attention|https://medium.com/platfarm/%EC%96%B4%ED%85%90%EC%85%98-%EB%A9%94%EC%BB%A4%EB%8B%88%EC%A6%98%EA%B3%BC-transfomer-self-attention-842498fd3225|
 
 
 # About SAGE Journals
