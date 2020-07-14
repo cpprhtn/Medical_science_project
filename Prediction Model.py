@@ -47,22 +47,22 @@ def img_paths(image_dir):
 
 
 #Images Load
-train_normal_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/train/NORMAL'
-test_normal_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/test/NORMAL'
+train_normal_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/train/NORMAL'
+test_normal_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/test/NORMAL'
 
 train_normal_paths = img_paths(train_normal_dir)
 test_normal_paths = img_paths(test_normal_dir)
 
-train_pneumonia_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/train/PNEUMONIA'
-test_pneumonia_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/test/PNEUMONIA'
+train_pneumonia_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/train/PNEUMONIA'
+test_pneumonia_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/test/PNEUMONIA'
 
 train_pneumonia_paths = img_paths(train_pneumonia_dir)
 test_pneumonia_paths = img_paths(test_pneumonia_dir)
 
-val_normal_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/val/NORMAL'
+val_normal_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/val/NORMAL'
 val_normal_paths = img_paths(val_normal_dir)
 
-val_pneumonia_dir = 'E:\Git_Hub\Medical_science_project/chest_xray/chest_xray/val/PNEUMONIA'
+val_pneumonia_dir = '/Users/cpprhtn/Desktop/git_local/Medical_science_project/chest_xray/chest_xray/val/PNEUMONIA'
 val_pneumonia_paths = img_paths(val_pneumonia_dir)
 
 
@@ -85,7 +85,7 @@ def make_data(normal_paths, pneumonia_paths):
     return X, y
 
 
-X_train, y_train = make_data(train_normal_paths, train_pneumonia_paths)
+X_train, y_train = make_data(train_normal_paths, train_pneumonia_paths, color_mode = "grayscale")
 print("X_train's shape: ", X_train.shape) #X_train's shape:  (5216, 224, 224, 1)
 print("y_train's shape: ", y_train.shape) #y_train's shape:  (5216,)
 
@@ -135,4 +135,81 @@ score = model.evaluate(X_test, y_test, batch_size=batch_size)
 print(score)
 
 
+
+
+
+
+
+
+from keras.layers import Activation
+from keras import backend as K
+from keras.preprocessing.image import ImageDataGenerator
+
+#image processing
+image_height = 150
+image_width = 150
+num_train_samples = 5216
+num_validation_samples = 624
+batch_size = 16
+training_data = 'train'
+validation_data = 'val'
+
+
+
+model = Sequential()
+model.add(Conv2D(32, (3, 3), input_shape=(image_height, image_width, 3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Conv2D(32, (3, 3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Conv2D(64, (3, 3)))
+model.add(Activation('relu'))
+model.add(MaxPooling2D(pool_size=(2, 2)))
+
+model.add(Flatten())
+model.add(Dense(64))
+model.add(Activation('relu'))
+model.add(Dropout(0.5))
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
+
+model.compile(loss='binary_crossentropy',
+              optimizer='rmsprop',
+              metrics=['accuracy'])
+
+
+train_datagen = ImageDataGenerator(
+    rescale=1./255,
+        shear_range=0.2,
+        zoom_range=0.2,
+        horizontal_flip=True)
+
+test_datagen = ImageDataGenerator(rescale=1./255)
+
+train_generator = train_datagen.flow_from_directory(
+        'train', 
+        target_size=(150, 150), 
+        batch_size=batch_size,
+        class_mode='binary') 
+#Found 5216 images belonging to 2 classes.
+
+validation_generator = test_datagen.flow_from_directory(
+        'val',
+        target_size=(150, 150),
+        batch_size=batch_size,
+        class_mode='binary')
+#Found 16 images belonging to 2 classes.
+
+
+model.fit_generator(
+    train_generator,
+    steps_per_epoch=num_train_samples // batch_size,
+    epochs=10,
+    validation_data=validation_generator,
+    validation_steps=num_validation_samples // batch_size)
+
+model.save_weights("Prediction_CNN.h5")
 
