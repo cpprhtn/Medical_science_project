@@ -72,6 +72,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |07_14|Add Cnn Prediction Model||
 |ㄴ|Vanilla Cnn||
 |07_15|Trying to convert it to a library||
+|ㄴ|__init__py, P_Model()||
 
 
 # About SAGE Journals
