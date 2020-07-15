@@ -32,9 +32,9 @@ from selenium import webdriver
 import pyautogui 
 import time
 import requests 
+import Prediction_Model.P_Model as P_Model
 
-
-
+result = Prediction_Model.P_Model()
 def get_URL(keyword):
     global url
     urlF = "https://journals.sagepub.com/action/doSearch?AllField=" 
