@@ -73,6 +73,9 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |ㄴ|Vanilla Cnn||
 |07_15|Trying to convert it to a library||
 |ㄴ|__init__py, P_Model()||
+|07_17|Finish Medical_science_project||
+
+#느낀점 & 아쉬운점
 
 
 # About SAGE Journals
