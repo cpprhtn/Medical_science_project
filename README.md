@@ -76,7 +76,7 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |07_17|Finish Medical_science_project||
 
 # 느낀점 & 아쉬운점
-
+생각보다 x-ray data가 없어서 아쉽다
 
 # About SAGE Journals
 세계 상위권 임팩트 팩터를 보여줌<br>
