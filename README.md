@@ -85,10 +85,23 @@ x-ray사진을 학습시켜 새로 들어온 사진에 대해 예측해보고, �
 
 #  Final model
 
-Prediction_Model.py -> Crawling_Model.py -> Text_preprocessing -> LSTM_text.py *OR* Vanilla_Rnn.py
+Prediction_Model.py -> Crawling_Model.py -> Text_preprocessing.py -> LSTM_text.py *OR* Vanilla_Rnn.py
 
+<li>Prediction_Model.py</li>
+Conv2D + Maxpool + Conv2D + FC(전결합 레이어) + FC + softmax
 
-#
+<li>Crawling_Model.py</li>
+selenium + pyautogui + requests + BeautifulSoup4 + nltk(stopwords preprocessing)
+
+<li>Text_preprocessing.py</li>
+tensorflow_text_Tokenizer + one hot encoding
+
+<li>LSTM_text.py</li>
+LSTM Model
+
+<li>Vanilla_Rnn.py</li>
+Vanilla Rnn Model
+
 
 
 # 느낀점 & 아쉬운점
