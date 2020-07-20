@@ -76,9 +76,10 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 |07_17|Finish Medical_science_project||
 
 
+
 #  Final model
 
-
+Prediction_Model.py -> Crawling_Model.py -> Text_preprocessing -> LSTM_text.py *OR* Vanilla_Rnn.py
 
 
 # 느낀점 & 아쉬운점
