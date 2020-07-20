@@ -82,6 +82,7 @@ x-ray사진을 학습시켜 새로 들어온 사진에 대해 예측해보고, �
 |07_15|Trying to convert it to a library||
 |ㄴ|__init__py, P_Model()||
 |07_17|Finish Medical_science_project||
+|07_20|Update Readme||
 
 
 
