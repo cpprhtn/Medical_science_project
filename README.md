@@ -20,11 +20,10 @@
 <li><del>장현준이 수술을 할 때면</del><br>로니는 세계의 의학 학회저술지의 최신 수술법등을 검색하고, 환자에게 더 좋은 방향의 수술방법을 알려준다.
 
 ## 생각중인 구상방안
-x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
+<del>x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 또한 세계 유명 저널등에 대해 검색하여 같이 알려주는 방식을 만들어 볼 예정이다.
-
 크롤링을 해서 문장에 대해 필요한 단어위주로 분석하여, 어떤 내용인지또한 간단히 나타나게 해보고 싶다.<br>
-<del>사실 최근에 읽는중인 'Deep Learning from Scratch2'는 자연어처리에 대한 부분이였고, 이를 이용해 프로젝트도 만들어보고 싶어서 적용해볼 예정이다.<br>
+사실 최근에 읽는중인 'Deep Learning from Scratch2'는 자연어처리에 대한 부분이였고, 이를 이용해 프로젝트도 만들어보고 싶어서 적용해볼 예정이다.<br>
 아마 seq2seq와 어텐션 등을 적용해볼 예정</del>
 
 
@@ -80,6 +79,9 @@ x-ray사진을 학습시켜 새 data에 대해 분류를 해보고,
 #  Final model
 
 Prediction_Model.py -> Crawling_Model.py -> Text_preprocessing -> LSTM_text.py *OR* Vanilla_Rnn.py
+
+
+#
 
 
 # 느낀점 & 아쉬운점
