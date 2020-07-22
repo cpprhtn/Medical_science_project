@@ -1,2 +1,1 @@
-
-git rm --cached __pycache__/ -r
+__pycache__
